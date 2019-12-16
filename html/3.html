@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #wrap {
+            height: 100%;
+            width: 100%;
+        }
+
+        .content {
+            height: 100%;
+            width: 100%;
+            background-color: #EFE3E3;
+            position: relative;
+            overflow: hidden;
+            display: none;
+        }
+
+        .content.selected {
+            display: block;
+        }
+
+        .content .main {
+            height: 100%;
+            width: 100%;
+            background: url("../img/1.png");
+            background-size: 100%, 100%;
+            text-align: center;
+            position: relative;
+            animation: mybg 2s;
+        }
+
+        .content .main img {
+            margin-top: 35%;
+        }
+
+        .content .footer {
+            height: 19%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            animation: myfooter 2s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes myfooter {
+            from {
+                bottom: -19%;
+            }
+
+            to {
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        .content .footer img {
+            position: absolute;
+            height: 100%;
+            width: 72%;
+            left: 14%;
+        }
+
+        .content .footer p {
+            height: 50%;
+            width: 50%;
+            position: absolute;
+            left: 33%;
+            top: -35%;
+            font-size: 16px;
+            font-weight: 400;
+            animation: myfooterp 2s;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+
+        @keyframes myfooterp {
+            from {
+                top: -35%;
+
+            }
+
+            to {
+                top: 35%;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio style="display: none" autoplay></audio>
+    <div class="content selected">
+        <div class="main">
+            <img src="../img/2.png">
+        </div>
+        <div class="footer">
+            <img src="../img/3.png">
+            <p>成绩单书开发商开具方</p>
+</body>
+
+</html>

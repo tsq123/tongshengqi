@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    #wrap {
+        height: 100%;
+        width: 100%;
+    }
+
+    .content {
+        height: 100%;
+        width: 100%;
+        background-color: #EFE3E3;
+        position: relative;
+    }
+
+    .content .third_header {
+        position: absolute;
+        height: 25%;
+        /*150*/
+        width: 100%;
+        /*350*/
+        left: 0;
+        top: 0;
+    }
+
+    .third_header img {
+        width: 53%;
+        /*186*/
+        height: 56%;
+        position: absolute;
+        left: 23%;
+        top: -22%;
+        animation: mythirdimg 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .content .third_footer {
+        position: absolute;
+        height: 25%;
+        /*150*/
+        width: 100%;
+        /*350*/
+        left: 0;
+        top: 80%;
+        overflow: hidden;
+    }
+
+    .third_footer img {
+        width: 82%;
+        /*290*/
+        height: 33%;
+        /*50*/
+        position: absolute;
+        left: 7%;
+        top: 100%;
+        animation: mythirdfooterimg 1s;
+        animation-delay: 3.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes mythirdfooterimg {
+        from {
+            top: 100%;
+        }
+
+        to {
+            top: 0%
+        }
+    }
+
+    @keyframes mythirdimg {
+        from {
+            top: -22%;
+        }
+
+        to {
+            top: 22%
+        }
+    }
+
+    .content .third_img {
+        width: 83%;
+        /*291*/
+        height: 7%;
+        /*43*/
+        position: absolute;
+        left: 8%;
+        top: 0;
+        opacity: 0;
+        animation: mythirdimg_02 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes mythirdimg_02 {
+        from {
+            top: 0;
+            opacity: 0;
+        }
+
+        to {
+            top: 25%;
+            opacity: 1;
+        }
+    }
+
+    .content .third_desc_1 {
+        width: 100%;
+        /*128*/
+        height: 10%;
+        /*85*/
+        position: absolute;
+        text-align: center;
+        top: 40%;
+        left: -100%;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: 微软雅黑;
+        color: rgb(133, 121, 35);
+        animation: third_desc_1 0.5s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes third_desc_1 {
+        from {
+            left: -100%;
+        }
+
+        to {
+            left: 0;
+        }
+    }
+
+    .content .third_desc_2 {
+        width: 100%;
+        /*128*/
+        height: 10%;
+        /*85*/
+        position: absolute;
+        text-align: center;
+        left: 100%;
+        top: 50%;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: 微软雅黑;
+        color: rgb(133, 121, 35);
+        animation: third_desc_2 0.5s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+
+    @keyframes third_desc_2 {
+        0% {
+            left: 100%;
+            opacity: 0;
+        }
+
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    .content .third_desc_3 {
+        width: 100%;
+        /*128*/
+        height: 10%;
+        /*85*/
+        position: absolute;
+        text-align: center;
+        top: 60%;
+        left: -100%;
+        color: rgb(133, 121, 35);
+        font-family: 微软雅黑;
+        font-size: 18px;
+        animation: third_desc_1 0.5s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes third_desc_3 {
+        0% {
+            top: 90%;
+            opacity: 0;
+        }
+
+        100% {
+            top: 72%;
+            opacity: 1;
+        }
+    }
+
+    .content .third_desc_4 {
+        width: 100%;
+        /*128*/
+        height: 10%;
+        /*85*/
+        position: absolute;
+        text-align: center;
+        top: 70%;
+        left: -100%;
+        color: rgb(133, 121, 35);
+        font-family: 微软雅黑;
+        font-size: 18px;
+        animation: third_desc_2 0.5s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes third_desc_4 {
+        0% {
+            top: 60%;
+            opacity: 0;
+        }
+
+        100% {
+            top: 80%;
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+    <div class="content">
+        <div class="third_header">
+            <img src="../img/6.png">
+        </div>
+        <img class="third_img" src="../img/7.png">
+        <div class="third_desc_1">
+            6:00 &nbsp; 起来化妆
+        </div>
+        <div class="third_desc_2">
+            8:00 &nbsp; 装饰婚车
+        </div>
+        <div class="third_desc_3">
+            10:00 &nbsp; 出发结亲
+        </div>
+        <div class="third_desc_4">
+            12:00 &nbsp; 返程回家
+        </div>
+        <div class="third_footer">
+            <img src="../img/third_02.png">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="ab">
+    <button id="btn">确认</button>
+</body>
+<script>
+    var abInput = document.getElementById("ab");
+    var btnInput = document.getElementById("btn");
+    btn.onclick = function () {
+        var ab = abInput.value * 1;
+        var m = 0; //素数
+        for (var j = 2; j < ab; j++) {
+            if (ab % j == 0) {
+                m = 1; //非素数
+                break;
+            }
+        }
+        if (m == 0) {
+            alert(ab + "是素数")
+        } else {
+            alert(ab + "不是素数")
+        }
+
+    }
+</script>
+
+</html>

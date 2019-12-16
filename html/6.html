@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #wrap {
+            height: 100%;
+            width: 100%;
+        }
+
+        .content {
+            height: 100%;
+            width: 100%;
+            background-color: #EFE3E3;
+            position: relative;
+        }
+        .content .four_bg {
+            height: 100%;
+            width: 100%;
+            transform: scale(0.3);;
+            animation: myfourbg 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes myfourbg {
+            from {
+                transform: scale(0.3);;
+            }
+
+            to {
+                transform: scale(1);;
+            }
+        }
+
+        .content .four_bg img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .content .four_marry_1 {
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            left: -100%;
+            top: 0;
+            opacity: 0.6;
+            animation: four_marry_1 1s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes four_marry_1 {
+            from {
+                left: -100%;
+            }
+
+            to {
+                left: 0;
+            }
+        }
+
+        .content .four_marry_2 {
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            left: 100%;
+            top: 50%;
+            opacity: 0.6;
+            animation: four_marry_2 1s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes four_marry_2 {
+            from {
+                left: 100%;
+            }
+
+            to {
+                left: 0;
+            }
+        }
+
+        .content .middle {
+            height: 5%;
+            width: 60%;
+            position: absolute;
+            left: 100%;
+            top: 48%;
+            background-color: #D1AFB4;
+            text-align: center;
+            vertical-align: middle;
+            animation: four_marry_2 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+            font-family: 微软雅黑;
+            color: rgb(255, 255, 255);
+            font-size: 22px;
+            z-index: 100;
+            border-radius: 4%;
+
+        }
+
+        .content .five_bg {
+            width: 100%;
+            height: 100%;
+            background: url("img/marry_1.jpg");
+            background-size: 100% 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: fivebg 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes fivebg {
+            0% {
+                background: url("../img/marry_1.jpg");
+                background-size: 100% 100%;
+                left: -100%;
+            }
+
+            10% {
+                background: url("../img/marry_1.jpg");
+                background-size: 100% 100%;
+                left: -50%;
+            }
+            20% {
+                background: url("../img/marry_1.jpg");
+                background-size: 100% 100%;
+                left: 0%;
+            }
+            30% {
+                background: url("../img/marry_3.jpg");
+                background-size: 100% 100%;
+                left: -100%;
+            }
+
+            40% {
+                background: url("../img/marry_3.jpg");
+                background-size: 100% 100%;
+                left: -50%;
+            }
+            50% {
+                background: url("../img/marry_3.jpg");
+                background-size: 100% 100%;
+                left: 0;
+            }
+            60% {
+                background: url("../img/marry2.png");
+                background-size: 100% 100%;
+                left: -100%;
+            }
+
+            70% {
+                background: url("../img/marry2.png");
+                background-size: 100% 100%;
+                left: -50%;
+            }
+            80% {
+                background: url("../img/marry2.png");
+                background-size: 100% 100%;
+                left: 0;
+            }
+            90% {
+                background: url("../img/marry2.png");
+                background-size: 100% 100%;
+                left: -100%;
+            }
+            100% {
+                background: url("../img/marry2.png");
+                background-size: 100% 100%;
+                left: 0;
+            }
+        }
+
+        .content .five_bg1 {
+            width: 100%;
+            height: 100%;
+            background: url("../img/marry_1.jpg");
+            background-size: 100% 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: fivebg1 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes fivebg1 {
+            0% {
+                background: url("../img/marry_1.jpg");
+                background-size: 100% 100%;
+                left: 100%;
+            }
+
+            10% {
+                background: url("../img/marry_1.jpg");
+                background-size: 100% 100%;
+                left: 50%;
+            }
+            20% {
+                background: url("../img/marry_1.jpg");
+                background-size: 100% 100%;
+                left: 0%;
+            }
+            30% {
+                background: url("../img/marry_3.jpg");
+                background-size: 100% 100%;
+                left: 100%;
+            }
+
+            40% {
+                background: url("../img/marry_3.jpg");
+                background-size: 100% 100%;
+                left: 50%;
+            }
+            50% {
+                background: url("../img/marry_3.jpg");
+                background-size: 100% 100%;
+                left: 0;
+            }
+            60% {
+                background: url("../img/marry2.png");
+                background-size: 100% 100%;
+                left: 100%;
+            }
+
+            70% {
+                background: url("../img/marry2.png");
+                background-size: 100% 100%;
+                left: 50%;
+            }
+            80% {
+                background: url("../img/marry2.png");
+                background-size: 100% 100%;
+                left: 0;
+            }
+            90% {
+                background: url("../img/marry2.png");
+                background-size: 100% 100%;
+                left: 100%;
+            }
+            100% {
+                background: url("../img/marry2.png");
+                background-size: 100% 100%;
+                left: 0;
+            }
+        }
+</style>
+<body>
+    <div class="content">
+        <div class="four_bg">
+            <img src="../img/fourbg.png">
+        </div>
+        <div class="middle">
+            执子之手,与子偕老
+        </div>
+        <img src="../img/marry2.png" class="four_marry_1">
+        <img src="../img/marry5.jpg" class="four_marry_2">
+    </div>
+    <div class="content">
+        <div class="five_bg"></div>
+        <div class="five_bg1"></div>
+    </div>
+</body>
+</html>
